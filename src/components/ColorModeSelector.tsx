@@ -33,10 +33,11 @@ export function ColorModeSelector() {
   }
 
   return (
-    <input
-      type="checkbox"
-      className={styles.colorCheckBox}
-      onChange={changeColors}
-    />
+    <div className={styles.switchColorModeContainer}>
+      <label className={styles.switch}>
+        <input type="checkbox" onChange={changeColors} />
+        <span className={`${styles.slider} ${styles.round}`}></span>
+      </label>
+    </div>
   );
 }
