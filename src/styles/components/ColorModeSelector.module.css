@@ -1,0 +1,7 @@
+.colorCheckBox {
+  background-image: url('/public/icons/bulb.png');
+}
+
+.colorCheckBox:checked {
+  background-image: url('/public/icons/bulb.png');
+}
