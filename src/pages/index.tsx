@@ -5,6 +5,7 @@ import styles from '../styles/pages/Home.module.css';
 import { CompletedChallenges } from '../components/CompletedChallenges';
 import { Countdown } from '../components/Countdown';
 import { ChallengeBox } from '../components/ChallengeBox';
+import { ColorModeSelector } from '../components/ColorModeSelector';
 
 import Head from 'next/head';
 import { GetServerSideProps } from 'next';
@@ -17,7 +18,7 @@ interface HomeProps {
   challengesCompleted: number;
 }
 
-export default function Home(props) {
+export default function Home(props: HomeProps) {
   // console.log(props);
 
   return (
@@ -32,6 +33,8 @@ export default function Home(props) {
         </Head>
 
         <ExperienceBar />
+
+        <ColorModeSelector />
 
         <CountdownProvider>
           <section>
